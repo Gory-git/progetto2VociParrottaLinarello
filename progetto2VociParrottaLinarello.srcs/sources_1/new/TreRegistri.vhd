@@ -32,10 +32,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity TreRegistri is
-    Port ( A : in STD_LOGIC_VECTOR (0 downto 0);
-           B : in STD_LOGIC_VECTOR (0 downto 0);
-           C : in STD_LOGIC_VECTOR (0 downto 0);
-           S : out STD_LOGIC_VECTOR (0 downto 0));
+    generic(n: integer := 16);
+    Port ( clk : in STD_LOGIC;
+           clear : in STD_LOGIC;
+           A : in STD_LOGIC_VECTOR (n - 1 downto 0);
+           B : in STD_LOGIC_VECTOR (n - 1 downto 0);
+           C : in STD_LOGIC_VECTOR (n - 1 downto 0);
+           S : out STD_LOGIC_VECTOR (n downto 0));
 end TreRegistri;
 
 architecture Behavioral of TreRegistri is
