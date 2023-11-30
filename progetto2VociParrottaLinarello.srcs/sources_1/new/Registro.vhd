@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity Registro is
-    generic (n:integer:=8);
+    generic (n : integer:=16);
     Port ( clk : in STD_LOGIC;
            clear : in STD_LOGIC;
            D : in STD_LOGIC_VECTOR (n-1 downto 0);

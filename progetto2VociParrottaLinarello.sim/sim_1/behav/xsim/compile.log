@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sources_1/new/Registro.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sources_1/new/Sommatore.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sommatore'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sources_1/new/TreRegistri.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TreRegistri'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sources_1/new/SommaTreRegistri.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SommaTreRegistri'
