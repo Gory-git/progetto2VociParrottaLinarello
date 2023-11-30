@@ -8,7 +8,7 @@ entity SommaTreRegistri is
            A : in STD_LOGIC_VECTOR (n-1 downto 0);
            B : in STD_LOGIC_VECTOR (n-1 downto 0);
            C : in STD_LOGIC_VECTOR (n-1 downto 0);
-           sum : out STD_LOGIC_VECTOR (n downto 0));
+           sum : out STD_LOGIC_VECTOR (n-1 downto 0));
 end SommaTreRegistri;
 
 architecture Behavioral of SommaTreRegistri is
@@ -38,16 +38,16 @@ component Sommatore
            clear : in STD_LOGIC;
            A : in STD_LOGIC_VECTOR (n-1 downto 0);
            B : in STD_LOGIC_VECTOR (n-1 downto 0);
-           sum : out STD_LOGIC_VECTOR (n downto 0));
+           sum : out STD_LOGIC_VECTOR (n-1 downto 0));
 end component;
 
 signal Q1, Q2, Q3: STD_LOGIC_VECTOR (n-1 downto 0);
-signal S1, S2, Carry: STD_LOGIC_VECTOR (n downto 0);
+signal S1, S2, Carry: STD_LOGIC_VECTOR (n-1 downto 0);
 
 begin 
 
 registriIn: TreRegistri generic map(16) port map(clk, clear, A, B, C, Q1, Q2, Q3);
-registroOut: Registro generic map(17) port map(clk, clear, S2, sum);
+registroOut: Registro generic map(16) port map(clk, clear, S2, sum);
 sommatore1: Sommatore generic map(16) port map(clk, clear, Q1, Q2, S1);
 sommatore2: Sommatore generic map(16) port map(clk, clear, S1, Q3, S2);
 
