@@ -1,30 +1,34 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Sommatore is
-    generic(n : integer:=16);
-    Port ( clk: in STD_LOGIC;
-           clear : in STD_LOGIC;
-           A : in STD_LOGIC_VECTOR (n-1 downto 0);
+entity ADDReg is
+    generic (n: integer:=16);
+    Port ( A : in STD_LOGIC_VECTOR (n-1 downto 0);
            B : in STD_LOGIC_VECTOR (n-1 downto 0);
-           sum : out STD_LOGIC_VECTOR (n-1 downto 0));
-end Sommatore;
+           Sum : out STD_LOGIC_VECTOR (n downto 0);
+           clk : in STD_LOGIC;
+           clear : in STD_LOGIC);
+end ADDReg;
 
-architecture Behavioral of Sommatore is
-
-signal P, G: STD_LOGIC_VECTOR (n-1 downto 0); --17bit
-signal carry: STD_LOGIC_VECTOR (n downto 0);
-
+architecture Behavioral of ADDReg is
+component Registro is
+    generic(n:integer:=8);
+    Port ( clk : in STD_LOGIC;
+           clear : in STD_LOGIC;
+           D : in STD_LOGIC_VECTOR (n-1 downto 0);
+           Q : out STD_LOGIC_VECTOR (n-1 downto 0));           
+end component;
+signal Ra, Rb, P, G, ISum: STD_LOGIC_VECTOR (n downto 0);
+signal c: STD_LOGIC_VECTOR (n+1 downto 0);
 begin
-  P<=A xor B;
-  G<=A and B;
-  carry(0)<='0';
-  carry(n+1 downto 1)<=(carry(n downto 0) and P) or G;
-  sum<=P xor carry(n downto 0);
-
+  P<=Ra xor Rb;
+  G<=Ra and Rb;
+  Ra(n)<=Ra(n-1); Rb(n)<=Rb(n-1);
+  RegA: Registro generic map(16) port map(clk, clear, a, Ra(n-1 downto 0));
+  RegB: Registro generic map(16) port map(clk, clear, b, Rb(n-1 downto 0));
+  c(0)<='0';
+  c(n+1 downto 1)<=G or (P and c(n downto 0));
+  Sum<=P xor c(n downto 0);
 end Behavioral;
---Rega: Registro generic map (16) port map (clk, clear, a, Ra(n-1 downto 0));
---Ra(n)<=Ra(n-1);
---Regb: Registro generic map (16) port map (clk, clear, b, Rb(n-1 downto 0));
---Rb(n)<=Rb(n-1);
---RegS: Registro generic map (17) port map (clk, clear, IntS, sum);
+
+
