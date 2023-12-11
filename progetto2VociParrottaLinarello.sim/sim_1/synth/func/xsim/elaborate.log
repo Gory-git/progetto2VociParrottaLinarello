@@ -1,0 +1,7 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8ba7120c607240939a41709dfae2990c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SimulazioneSommaTreRegistri_func_synth xil_defaultlib.SimulazioneSommaTreRegistri -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3146] binding entity 'sommatreregistri' does not have generic 'n' [C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sim_1/new/SimulazioneSommaTreRegistri.vhd:11]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit simulazionesommatreregistri in library work failed.

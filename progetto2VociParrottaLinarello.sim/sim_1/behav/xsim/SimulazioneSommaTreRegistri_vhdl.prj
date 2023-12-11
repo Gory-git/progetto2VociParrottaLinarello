@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../progetto2VociParrottaLinarello.srcs/sources_1/new/Registro.vhd" \
+"../../../../progetto2VociParrottaLinarello.srcs/sources_1/new/SommaTreRegistri.vhd" \
+"../../../../progetto2VociParrottaLinarello.srcs/sources_1/new/Sommatore.vhd" \
+"../../../../progetto2VociParrottaLinarello.srcs/sim_1/new/SimulazioneSommaTreRegistri.vhd" \
+
+# Do not sort compile order
+nosort
