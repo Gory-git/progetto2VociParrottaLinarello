@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.sim/sim_1/synth/func/xsim/SimulazioneSommaTreRegistri_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Greg/VivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.sim/sim_1/synth/func/xsim/SimulazioneSommaTreRegistri_func_synth.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'Registro'
 INFO: [VRFC 10-3107] analyzing entity 'Registro_0'
 INFO: [VRFC 10-3107] analyzing entity 'Registro_1'
@@ -8,5 +8,5 @@ INFO: [VRFC 10-3107] analyzing entity '\Registro__parameterized3_2\'
 INFO: [VRFC 10-3107] analyzing entity 'Sommatore'
 INFO: [VRFC 10-3107] analyzing entity '\Sommatore__parameterized1\'
 INFO: [VRFC 10-3107] analyzing entity 'SommaTreRegistri'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sim_1/new/SimulazioneSommaTreRegistri.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Greg/VivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sim_1/new/SimulazioneSommaTreRegistri.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'SimulazioneSommaTreRegistri'

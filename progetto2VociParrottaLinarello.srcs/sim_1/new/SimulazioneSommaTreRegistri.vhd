@@ -8,7 +8,7 @@ end SimulazioneSommaTreRegistri;
 
 architecture Behavioral of SimulazioneSommaTreRegistri is
 component SommaTreRegistri
-    generic(n : integer:=16);
+    --generic(n : integer:=16);
     Port ( clk: in STD_LOGIC;
            clear : in STD_LOGIC;
            A : in STD_LOGIC_VECTOR (n-1 downto 0);

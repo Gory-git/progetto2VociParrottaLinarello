@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Mon Dec 11 23:01:35 2023
--- Host        : DESKTOP-0RUADB9 running 64-bit major release  (build 9200)
+-- Date        : Wed Dec 13 09:33:29 2023
+-- Host        : LAPTOP-J2HCU9PD running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -mode funcsim -nolib -force -file
---               C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.sim/sim_1/synth/func/xsim/SimulazioneSommaTreRegistri_func_synth.vhd
+--               C:/Users/Greg/VivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.sim/sim_1/synth/func/xsim/SimulazioneSommaTreRegistri_func_synth.vhd
 -- Design      : SommaTreRegistri
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -212,7 +212,7 @@ entity Registro_0 is
     \Q_reg[5]_0\ : out STD_LOGIC_VECTOR ( 4 downto 0 );
     \Q_reg[0]_0\ : out STD_LOGIC;
     \Q_reg[17]\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    \Q[17]_i_4_0\ : in STD_LOGIC;
+    \c1__0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 16 downto 0 );
     CLK : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
@@ -236,20 +236,20 @@ architecture STRUCTURE of Registro_0 is
   signal \^q_reg[0]_0\ : STD_LOGIC;
   signal \^q_reg[5]_0\ : STD_LOGIC_VECTOR ( 4 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Q[10]_i_1__0\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \Q[10]_i_2__0\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \Q[10]_i_1__0\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \Q[10]_i_2__0\ : label is "soft_lutpair11";
   attribute SOFT_HLUTNM of \Q[12]_i_1__0\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \Q[12]_i_2__0\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \Q[13]_i_1__0\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \Q[14]_i_1__0\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \Q[12]_i_2__0\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \Q[13]_i_1__0\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \Q[14]_i_1__0\ : label is "soft_lutpair14";
   attribute SOFT_HLUTNM of \Q[14]_i_2__0\ : label is "soft_lutpair9";
   attribute SOFT_HLUTNM of \Q[17]_i_6\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \Q[4]_i_1__0\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \Q[4]_i_1__0\ : label is "soft_lutpair13";
   attribute SOFT_HLUTNM of \Q[5]_i_1__0\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \Q[6]_i_1__0\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \Q[6]_i_2__0\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \Q[8]_i_1__0\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \Q[8]_i_2__0\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \Q[6]_i_1__0\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \Q[6]_i_2__0\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \Q[8]_i_1__0\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \Q[8]_i_2__0\ : label is "soft_lutpair12";
 begin
   \Q_reg[0]_0\ <= \^q_reg[0]_0\;
   \Q_reg[5]_0\(4 downto 0) <= \^q_reg[5]_0\(4 downto 0);
@@ -425,7 +425,7 @@ begin
     )
         port map (
       I0 => \G__0\(5),
-      I1 => \Q[17]_i_4_0\,
+      I1 => \c1__0\(0),
       I2 => \Q_reg[17]\(6),
       I3 => Q(6),
       I4 => \Q_reg[17]\(7),
@@ -763,7 +763,7 @@ entity Registro_1 is
   port (
     \Q_reg[0]_0\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
     Q : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    \Q_reg[4]_0\ : out STD_LOGIC;
+    \c1__0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     \Q[17]_i_7_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \Q[17]_i_5\ : in STD_LOGIC;
     \Q_reg[16]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -776,7 +776,7 @@ end Registro_1;
 
 architecture STRUCTURE of Registro_1 is
   signal \^q\ : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal \p_0_in__0\ : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal \Q[17]_i_8_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \Q[0]_i_1__0\ : label is "soft_lutpair16";
   attribute SOFT_HLUTNM of \Q[1]_i_1__0\ : label is "soft_lutpair16";
@@ -796,13 +796,13 @@ begin
       INIT => X"A8A8A880A8808080"
     )
         port map (
-      I0 => \p_0_in__0\(5),
+      I0 => \Q[17]_i_8_n_0\,
       I1 => \Q[17]_i_7_0\(3),
       I2 => \^q\(4),
       I3 => \Q[17]_i_7_0\(2),
       I4 => \^q\(3),
       I5 => \Q[17]_i_5\,
-      O => \Q_reg[4]_0\
+      O => \c1__0\(0)
     );
 \Q[17]_i_8\: unisim.vcomponents.LUT2
     generic map(
@@ -811,7 +811,7 @@ begin
         port map (
       I0 => \^q\(5),
       I1 => \Q[17]_i_7_0\(4),
-      O => \p_0_in__0\(5)
+      O => \Q[17]_i_8_n_0\
     );
 \Q[1]_i_1__0\: unisim.vcomponents.LUT4
     generic map(
@@ -1227,7 +1227,7 @@ entity \Registro__parameterized3\ is
     \Q_reg[5]_0\ : out STD_LOGIC_VECTOR ( 4 downto 0 );
     \Q_reg[0]_0\ : out STD_LOGIC;
     \Q_reg[16]\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    \Q[16]_i_4_0\ : in STD_LOGIC;
+    c1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 15 downto 0 );
     CLK : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
@@ -1251,22 +1251,22 @@ architecture STRUCTURE of \Registro__parameterized3\ is
   signal \^q_reg[0]_0\ : STD_LOGIC;
   signal \^q_reg[5]_0\ : STD_LOGIC_VECTOR ( 4 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Q[10]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \Q[10]_i_2\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \Q[10]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \Q[10]_i_2\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \Q[12]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \Q[12]_i_2\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \Q[12]_i_2\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \Q[13]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \Q[14]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \Q[14]_i_2\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \Q[15]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \Q[16]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \Q[16]_i_6\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \Q[4]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \Q[4]_i_1\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \Q[5]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \Q[6]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \Q[6]_i_2\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \Q[8]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \Q[8]_i_2\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \Q[6]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \Q[6]_i_2\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \Q[8]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \Q[8]_i_2\ : label is "soft_lutpair5";
 begin
   \Q_reg[0]_0\ <= \^q_reg[0]_0\;
   \Q_reg[5]_0\(4 downto 0) <= \^q_reg[5]_0\(4 downto 0);
@@ -1428,7 +1428,7 @@ begin
     )
         port map (
       I0 => G(5),
-      I1 => \Q[16]_i_4_0\,
+      I1 => c1(0),
       I2 => \Q_reg[16]\(6),
       I3 => Q(6),
       I4 => \Q_reg[16]\(7),
@@ -1755,7 +1755,7 @@ entity \Registro__parameterized3_2\ is
   port (
     \Q_reg[0]_0\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
     Q : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    \Q_reg[4]_0\ : out STD_LOGIC;
+    c1 : out STD_LOGIC_VECTOR ( 0 to 0 );
     \Q[16]_i_7_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \Q[16]_i_5\ : in STD_LOGIC;
     \Q_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -1768,7 +1768,7 @@ end \Registro__parameterized3_2\;
 
 architecture STRUCTURE of \Registro__parameterized3_2\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal \p_0_in__0\ : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal \Q[16]_i_8_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \Q[0]_i_1\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \Q[1]_i_1\ : label is "soft_lutpair8";
@@ -1788,13 +1788,13 @@ begin
       INIT => X"A8A8A880A8808080"
     )
         port map (
-      I0 => \p_0_in__0\(5),
+      I0 => \Q[16]_i_8_n_0\,
       I1 => \Q[16]_i_7_0\(3),
       I2 => \^q\(4),
       I3 => \Q[16]_i_7_0\(2),
       I4 => \^q\(3),
       I5 => \Q[16]_i_5\,
-      O => \Q_reg[4]_0\
+      O => c1(0)
     );
 \Q[16]_i_8\: unisim.vcomponents.LUT2
     generic map(
@@ -1803,7 +1803,7 @@ begin
         port map (
       I0 => \^q\(5),
       I1 => \Q[16]_i_7_0\(4),
-      O => \p_0_in__0\(5)
+      O => \Q[16]_i_8_n_0\
     );
 \Q[1]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -2018,7 +2018,6 @@ architecture STRUCTURE of Sommatore is
   signal RegB_n_15 : STD_LOGIC;
   signal RegB_n_16 : STD_LOGIC;
   signal RegB_n_17 : STD_LOGIC;
-  signal RegB_n_18 : STD_LOGIC;
   signal RegB_n_2 : STD_LOGIC;
   signal RegB_n_3 : STD_LOGIC;
   signal RegB_n_4 : STD_LOGIC;
@@ -2027,13 +2026,13 @@ architecture STRUCTURE of Sommatore is
   signal RegB_n_7 : STD_LOGIC;
   signal RegB_n_8 : STD_LOGIC;
   signal RegB_n_9 : STD_LOGIC;
+  signal c1 : STD_LOGIC_VECTOR ( 5 to 5 );
 begin
 RegA: entity work.\Registro__parameterized3\
      port map (
       AR(0) => AR(0),
       CLK => CLK,
       D(15 downto 0) => D(15 downto 0),
-      \Q[16]_i_4_0\ => RegB_n_18,
       \Q_reg[0]_0\ => RegA_n_20,
       \Q_reg[14]_0\(14 downto 0) => \Q_reg[14]\(16 downto 2),
       \Q_reg[16]\(15) => RegB_n_2,
@@ -2053,7 +2052,8 @@ RegA: entity work.\Registro__parameterized3\
       \Q_reg[16]\(1) => RegB_n_16,
       \Q_reg[16]\(0) => RegB_n_17,
       \Q_reg[5]_0\(4 downto 2) => Q(5 downto 3),
-      \Q_reg[5]_0\(1 downto 0) => Q(1 downto 0)
+      \Q_reg[5]_0\(1 downto 0) => Q(1 downto 0),
+      c1(0) => c1(5)
     );
 RegB: entity work.\Registro__parameterized3_2\
      port map (
@@ -2080,7 +2080,7 @@ RegB: entity work.\Registro__parameterized3_2\
       \Q[16]_i_7_0\(1 downto 0) => Q(1 downto 0),
       \Q_reg[0]_0\(1 downto 0) => \Q_reg[14]\(1 downto 0),
       \Q_reg[15]_0\(15 downto 0) => \Q_reg[15]\(15 downto 0),
-      \Q_reg[4]_0\ => RegB_n_18
+      c1(0) => c1(5)
     );
 end STRUCTURE;
 library IEEE;
@@ -2110,7 +2110,6 @@ architecture STRUCTURE of \Sommatore__parameterized1\ is
   signal RegB_n_15 : STD_LOGIC;
   signal RegB_n_16 : STD_LOGIC;
   signal RegB_n_17 : STD_LOGIC;
-  signal RegB_n_18 : STD_LOGIC;
   signal RegB_n_2 : STD_LOGIC;
   signal RegB_n_3 : STD_LOGIC;
   signal RegB_n_4 : STD_LOGIC;
@@ -2119,13 +2118,13 @@ architecture STRUCTURE of \Sommatore__parameterized1\ is
   signal RegB_n_7 : STD_LOGIC;
   signal RegB_n_8 : STD_LOGIC;
   signal RegB_n_9 : STD_LOGIC;
+  signal \c1__0\ : STD_LOGIC_VECTOR ( 5 to 5 );
 begin
 RegA: entity work.Registro_0
      port map (
       AR(0) => AR(0),
       CLK => CLK,
       D(16 downto 0) => D(16 downto 0),
-      \Q[17]_i_4_0\ => RegB_n_18,
       \Q_reg[0]_0\ => RegA_n_21,
       \Q_reg[15]_0\(15 downto 0) => \Q_reg[15]\(17 downto 2),
       \Q_reg[17]\(15) => RegB_n_2,
@@ -2145,7 +2144,8 @@ RegA: entity work.Registro_0
       \Q_reg[17]\(1) => RegB_n_16,
       \Q_reg[17]\(0) => RegB_n_17,
       \Q_reg[5]_0\(4 downto 2) => Q(5 downto 3),
-      \Q_reg[5]_0\(1 downto 0) => Q(1 downto 0)
+      \Q_reg[5]_0\(1 downto 0) => Q(1 downto 0),
+      \c1__0\(0) => \c1__0\(5)
     );
 RegB: entity work.Registro_1
      port map (
@@ -2172,7 +2172,7 @@ RegB: entity work.Registro_1
       \Q[17]_i_7_0\(1 downto 0) => Q(1 downto 0),
       \Q_reg[0]_0\(1 downto 0) => \Q_reg[15]\(1 downto 0),
       \Q_reg[16]_0\(15 downto 0) => \Q_reg[16]\(15 downto 0),
-      \Q_reg[4]_0\ => RegB_n_18
+      \c1__0\(0) => \c1__0\(5)
     );
 end STRUCTURE;
 library IEEE;
@@ -2204,8 +2204,8 @@ architecture STRUCTURE of SommaTreRegistri is
   signal clear_IBUF : STD_LOGIC;
   signal clk_IBUF : STD_LOGIC;
   signal clk_IBUF_BUFG : STD_LOGIC;
-  signal p_0_in : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal p_0_in_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal sommatore1_n_16 : STD_LOGIC;
+  signal sommatore2_n_17 : STD_LOGIC;
   signal sum_OBUF : STD_LOGIC_VECTOR ( 17 downto 0 );
 begin
 \A_IBUF[0]_inst\: unisim.vcomponents.IBUF
@@ -2476,7 +2476,7 @@ registroOut: entity work.\Registro__parameterized1\
       AR(0) => clear_IBUF,
       CLK => clk_IBUF_BUFG,
       D(17 downto 1) => S2(17 downto 1),
-      D(0) => p_0_in_0(0),
+      D(0) => sommatore2_n_17,
       Q(17 downto 0) => sum_OBUF(17 downto 0)
     );
 sommatore1: entity work.Sommatore
@@ -2485,7 +2485,7 @@ sommatore1: entity work.Sommatore
       CLK => clk_IBUF_BUFG,
       D(15 downto 0) => A_IBUF(15 downto 0),
       \Q_reg[14]\(16 downto 1) => S1(16 downto 1),
-      \Q_reg[14]\(0) => p_0_in(0),
+      \Q_reg[14]\(0) => sommatore1_n_16,
       \Q_reg[15]\(15 downto 0) => B_IBUF(15 downto 0)
     );
 sommatore2: entity work.\Sommatore__parameterized1\
@@ -2493,9 +2493,9 @@ sommatore2: entity work.\Sommatore__parameterized1\
       AR(0) => clear_IBUF,
       CLK => clk_IBUF_BUFG,
       D(16 downto 1) => S1(16 downto 1),
-      D(0) => p_0_in(0),
+      D(0) => sommatore1_n_16,
       \Q_reg[15]\(17 downto 1) => S2(17 downto 1),
-      \Q_reg[15]\(0) => p_0_in_0(0),
+      \Q_reg[15]\(0) => sommatore2_n_17,
       \Q_reg[16]\(15) => Q(16),
       \Q_reg[16]\(14 downto 0) => Q(14 downto 0)
     );

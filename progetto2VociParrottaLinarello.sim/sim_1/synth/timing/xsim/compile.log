@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.sim/sim_1/synth/timing/xsim/SimulazioneSommaTreRegistri_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Greg/VivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.sim/sim_1/synth/timing/xsim/SimulazioneSommaTreRegistri_time_synth.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Registro
 INFO: [VRFC 10-311] analyzing module Registro_0
 INFO: [VRFC 10-311] analyzing module Registro_1
@@ -9,5 +9,5 @@ INFO: [VRFC 10-311] analyzing module SommaTreRegistri
 INFO: [VRFC 10-311] analyzing module Sommatore
 INFO: [VRFC 10-311] analyzing module Sommatore__parameterized1
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sim_1/new/SimulazioneSommaTreRegistri.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Greg/VivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sim_1/new/SimulazioneSommaTreRegistri.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'SimulazioneSommaTreRegistri'

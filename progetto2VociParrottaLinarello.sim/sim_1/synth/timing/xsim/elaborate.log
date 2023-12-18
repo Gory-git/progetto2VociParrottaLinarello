@@ -1,7 +1,39 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8ba7120c607240939a41709dfae2990c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot SimulazioneSommaTreRegistri_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.SimulazioneSommaTreRegistri xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8ba7120c607240939a41709dfae2990c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot SimulazioneSommaTreRegistri_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.SimulazioneSommaTreRegistri xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-ERROR: [VRFC 10-3146] binding entity '\SommaTreRegistri\' does not have generic 'n' [C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.srcs/sim_1/new/SimulazioneSommaTreRegistri.vhd:11]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "SimulazioneSommaTreRegistri_time_synth.sdf", for root module "SimulazioneSommaTreRegistri/circuito".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "SimulazioneSommaTreRegistri_time_synth.sdf", for root module "SimulazioneSommaTreRegistri/circuito".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.Registro
+Compiling module xil_defaultlib.Registro__parameterized1
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.Registro__parameterized3
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.Registro__parameterized3_2
+Compiling module xil_defaultlib.Sommatore
+Compiling module xil_defaultlib.Registro_0
+Compiling module xil_defaultlib.Registro_1
+Compiling module xil_defaultlib.Sommatore__parameterized1
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.SommaTreRegistri
+Compiling architecture behavioral of entity xil_defaultlib.simulazionesommatreregistri
+Built simulation snapshot SimulazioneSommaTreRegistri_time_synth

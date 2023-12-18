@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Mon Dec 11 23:02:31 2023
-// Host        : DESKTOP-0RUADB9 running 64-bit major release  (build 9200)
+// Date        : Wed Dec 13 12:15:23 2023
+// Host        : LAPTOP-J2HCU9PD running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
-//               C:/Users/grego/vivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.sim/sim_1/synth/timing/xsim/SimulazioneSommaTreRegistri_time_synth.v
+//               C:/Users/Greg/VivadoProjects/progetto2VociParrottaLinarello/progetto2VociParrottaLinarello.sim/sim_1/synth/timing/xsim/SimulazioneSommaTreRegistri_time_synth.v
 // Design      : SommaTreRegistri
 // Purpose     : This verilog netlist is a timing simulation representation of the design and should not be modified or
 //               synthesized. Please ensure that this netlist is used with the corresponding SDF file.
@@ -164,7 +164,7 @@ module Registro_0
     \Q_reg[5]_0 ,
     \Q_reg[0]_0 ,
     \Q_reg[17] ,
-    \Q[17]_i_4_0 ,
+    c1__0,
     D,
     CLK,
     AR);
@@ -172,7 +172,7 @@ module Registro_0
   output [4:0]\Q_reg[5]_0 ;
   output \Q_reg[0]_0 ;
   input [15:0]\Q_reg[17] ;
-  input \Q[17]_i_4_0 ;
+  input [0:0]c1__0;
   input [16:0]D;
   input CLK;
   input [0:0]AR;
@@ -187,7 +187,6 @@ module Registro_0
   wire \Q[14]_i_2__0_n_0 ;
   wire \Q[17]_i_2_n_0 ;
   wire \Q[17]_i_3_n_0 ;
-  wire \Q[17]_i_4_0 ;
   wire \Q[17]_i_4_n_0 ;
   wire \Q[17]_i_5_n_0 ;
   wire \Q[6]_i_2__0_n_0 ;
@@ -196,8 +195,9 @@ module Registro_0
   wire [15:0]\Q_reg[15]_0 ;
   wire [15:0]\Q_reg[17] ;
   wire [4:0]\Q_reg[5]_0 ;
+  wire [0:0]c1__0;
 
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT5 #(
     .INIT(32'hE81717E8)) 
     \Q[10]_i_1__0 
@@ -207,7 +207,7 @@ module Registro_0
         .I3(Q[10]),
         .I4(\Q_reg[17] [10]),
         .O(\Q_reg[15]_0 [8]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT5 #(
     .INIT(32'hFFE8E800)) 
     \Q[10]_i_2__0 
@@ -234,7 +234,7 @@ module Registro_0
         .I3(Q[12]),
         .I4(\Q_reg[17] [12]),
         .O(\Q_reg[15]_0 [10]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT5 #(
     .INIT(32'hFFE8E800)) 
     \Q[12]_i_2__0 
@@ -244,7 +244,7 @@ module Registro_0
         .I3(\Q_reg[17] [10]),
         .I4(Q[10]),
         .O(\Q[12]_i_2__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'h96)) 
     \Q[13]_i_1__0 
@@ -252,7 +252,7 @@ module Registro_0
         .I1(Q[13]),
         .I2(\Q_reg[17] [13]),
         .O(\Q_reg[15]_0 [11]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT5 #(
     .INIT(32'hE81717E8)) 
     \Q[14]_i_1__0 
@@ -332,7 +332,7 @@ module Registro_0
     .INIT(64'hFFFFFEE0FEE00000)) 
     \Q[17]_i_5 
        (.I0(G__0),
-        .I1(\Q[17]_i_4_0 ),
+        .I1(c1__0),
         .I2(\Q_reg[17] [6]),
         .I3(Q[6]),
         .I4(\Q_reg[17] [7]),
@@ -362,7 +362,7 @@ module Registro_0
         .I1(\Q_reg[5]_0 [2]),
         .I2(\Q_reg[17] [3]),
         .O(\Q_reg[15]_0 [1]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT5 #(
     .INIT(32'hE81717E8)) 
     \Q[4]_i_1__0 
@@ -390,7 +390,7 @@ module Registro_0
         .I1(\Q_reg[5]_0 [4]),
         .I2(\Q_reg[17] [5]),
         .O(\Q_reg[15]_0 [3]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT5 #(
     .INIT(32'hE81717E8)) 
     \Q[6]_i_1__0 
@@ -400,7 +400,7 @@ module Registro_0
         .I3(Q[6]),
         .I4(\Q_reg[17] [6]),
         .O(\Q_reg[15]_0 [4]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT5 #(
     .INIT(32'hFFE8E800)) 
     \Q[6]_i_2__0 
@@ -417,7 +417,7 @@ module Registro_0
         .I1(Q[7]),
         .I2(\Q_reg[17] [7]),
         .O(\Q_reg[15]_0 [5]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT5 #(
     .INIT(32'hE81717E8)) 
     \Q[8]_i_1__0 
@@ -427,7 +427,7 @@ module Registro_0
         .I3(Q[8]),
         .I4(\Q_reg[17] [8]),
         .O(\Q_reg[15]_0 [6]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT5 #(
     .INIT(32'hFFE8E800)) 
     \Q[8]_i_2__0 
@@ -586,7 +586,7 @@ endmodule
 module Registro_1
    (\Q_reg[0]_0 ,
     Q,
-    \Q_reg[4]_0 ,
+    c1__0,
     \Q[17]_i_7_0 ,
     \Q[17]_i_5 ,
     \Q_reg[16]_0 ,
@@ -594,7 +594,7 @@ module Registro_1
     AR);
   output [1:0]\Q_reg[0]_0 ;
   output [15:0]Q;
-  output \Q_reg[4]_0 ;
+  output [0:0]c1__0;
   input [4:0]\Q[17]_i_7_0 ;
   input \Q[17]_i_5 ;
   input [15:0]\Q_reg[16]_0 ;
@@ -606,10 +606,10 @@ module Registro_1
   wire [15:0]Q;
   wire \Q[17]_i_5 ;
   wire [4:0]\Q[17]_i_7_0 ;
+  wire \Q[17]_i_8_n_0 ;
   wire [1:0]\Q_reg[0]_0 ;
   wire [15:0]\Q_reg[16]_0 ;
-  wire \Q_reg[4]_0 ;
-  wire [5:5]p_0_in__0;
+  wire [0:0]c1__0;
 
   (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT2 #(
@@ -621,19 +621,19 @@ module Registro_1
   LUT6 #(
     .INIT(64'hA8A8A880A8808080)) 
     \Q[17]_i_7 
-       (.I0(p_0_in__0),
+       (.I0(\Q[17]_i_8_n_0 ),
         .I1(\Q[17]_i_7_0 [3]),
         .I2(Q[4]),
         .I3(\Q[17]_i_7_0 [2]),
         .I4(Q[3]),
         .I5(\Q[17]_i_5 ),
-        .O(\Q_reg[4]_0 ));
+        .O(c1__0));
   LUT2 #(
     .INIT(4'h6)) 
     \Q[17]_i_8 
        (.I0(Q[5]),
         .I1(\Q[17]_i_7_0 [4]),
-        .O(p_0_in__0));
+        .O(\Q[17]_i_8_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
     .INIT(16'h8778)) 
@@ -941,7 +941,7 @@ module Registro__parameterized3
     \Q_reg[5]_0 ,
     \Q_reg[0]_0 ,
     \Q_reg[16] ,
-    \Q[16]_i_4_0 ,
+    c1,
     D,
     CLK,
     AR);
@@ -949,7 +949,7 @@ module Registro__parameterized3
   output [4:0]\Q_reg[5]_0 ;
   output \Q_reg[0]_0 ;
   input [15:0]\Q_reg[16] ;
-  input \Q[16]_i_4_0 ;
+  input [0:0]c1;
   input [15:0]D;
   input CLK;
   input [0:0]AR;
@@ -964,7 +964,6 @@ module Registro__parameterized3
   wire \Q[14]_i_2_n_0 ;
   wire \Q[16]_i_2_n_0 ;
   wire \Q[16]_i_3_n_0 ;
-  wire \Q[16]_i_4_0 ;
   wire \Q[16]_i_4_n_0 ;
   wire \Q[16]_i_5_n_0 ;
   wire \Q[6]_i_2_n_0 ;
@@ -973,8 +972,9 @@ module Registro__parameterized3
   wire [14:0]\Q_reg[14]_0 ;
   wire [15:0]\Q_reg[16] ;
   wire [4:0]\Q_reg[5]_0 ;
+  wire [0:0]c1;
 
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT5 #(
     .INIT(32'hE81717E8)) 
     \Q[10]_i_1 
@@ -984,7 +984,7 @@ module Registro__parameterized3
         .I3(Q[10]),
         .I4(\Q_reg[16] [10]),
         .O(\Q_reg[14]_0 [8]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'hFFE8E800)) 
     \Q[10]_i_2 
@@ -1011,7 +1011,7 @@ module Registro__parameterized3
         .I3(Q[12]),
         .I4(\Q_reg[16] [12]),
         .O(\Q_reg[14]_0 [10]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT5 #(
     .INIT(32'hFFE8E800)) 
     \Q[12]_i_2 
@@ -1100,7 +1100,7 @@ module Registro__parameterized3
     .INIT(64'hFFFFFEE0FEE00000)) 
     \Q[16]_i_5 
        (.I0(G),
-        .I1(\Q[16]_i_4_0 ),
+        .I1(c1),
         .I2(\Q_reg[16] [6]),
         .I3(Q[6]),
         .I4(\Q_reg[16] [7]),
@@ -1130,7 +1130,7 @@ module Registro__parameterized3
         .I1(\Q_reg[5]_0 [2]),
         .I2(\Q_reg[16] [3]),
         .O(\Q_reg[14]_0 [1]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT5 #(
     .INIT(32'hE81717E8)) 
     \Q[4]_i_1 
@@ -1158,7 +1158,7 @@ module Registro__parameterized3
         .I1(\Q_reg[5]_0 [4]),
         .I2(\Q_reg[16] [5]),
         .O(\Q_reg[14]_0 [3]));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT5 #(
     .INIT(32'hE81717E8)) 
     \Q[6]_i_1 
@@ -1168,7 +1168,7 @@ module Registro__parameterized3
         .I3(Q[6]),
         .I4(\Q_reg[16] [6]),
         .O(\Q_reg[14]_0 [4]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT5 #(
     .INIT(32'hFFE8E800)) 
     \Q[6]_i_2 
@@ -1185,7 +1185,7 @@ module Registro__parameterized3
         .I1(Q[7]),
         .I2(\Q_reg[16] [7]),
         .O(\Q_reg[14]_0 [5]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'hE81717E8)) 
     \Q[8]_i_1 
@@ -1195,7 +1195,7 @@ module Registro__parameterized3
         .I3(Q[8]),
         .I4(\Q_reg[16] [8]),
         .O(\Q_reg[14]_0 [6]));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT5 #(
     .INIT(32'hFFE8E800)) 
     \Q[8]_i_2 
@@ -1346,7 +1346,7 @@ endmodule
 module Registro__parameterized3_2
    (\Q_reg[0]_0 ,
     Q,
-    \Q_reg[4]_0 ,
+    c1,
     \Q[16]_i_7_0 ,
     \Q[16]_i_5 ,
     \Q_reg[15]_0 ,
@@ -1354,7 +1354,7 @@ module Registro__parameterized3_2
     AR);
   output [1:0]\Q_reg[0]_0 ;
   output [15:0]Q;
-  output \Q_reg[4]_0 ;
+  output [0:0]c1;
   input [4:0]\Q[16]_i_7_0 ;
   input \Q[16]_i_5 ;
   input [15:0]\Q_reg[15]_0 ;
@@ -1366,10 +1366,10 @@ module Registro__parameterized3_2
   wire [15:0]Q;
   wire \Q[16]_i_5 ;
   wire [4:0]\Q[16]_i_7_0 ;
+  wire \Q[16]_i_8_n_0 ;
   wire [1:0]\Q_reg[0]_0 ;
   wire [15:0]\Q_reg[15]_0 ;
-  wire \Q_reg[4]_0 ;
-  wire [5:5]p_0_in__0;
+  wire [0:0]c1;
 
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT2 #(
@@ -1381,19 +1381,19 @@ module Registro__parameterized3_2
   LUT6 #(
     .INIT(64'hA8A8A880A8808080)) 
     \Q[16]_i_7 
-       (.I0(p_0_in__0),
+       (.I0(\Q[16]_i_8_n_0 ),
         .I1(\Q[16]_i_7_0 [3]),
         .I2(Q[4]),
         .I3(\Q[16]_i_7_0 [2]),
         .I4(Q[3]),
         .I5(\Q[16]_i_5 ),
-        .O(\Q_reg[4]_0 ));
+        .O(c1));
   LUT2 #(
     .INIT(4'h6)) 
     \Q[16]_i_8 
        (.I0(Q[5]),
         .I1(\Q[16]_i_7_0 [4]),
-        .O(p_0_in__0));
+        .O(\Q[16]_i_8_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
     .INIT(16'h8778)) 
@@ -1563,8 +1563,8 @@ module SommaTreRegistri
   wire clk;
   wire clk_IBUF;
   wire clk_IBUF_BUFG;
-  wire [0:0]p_0_in;
-  wire [0:0]p_0_in_0;
+  wire sommatore1_n_16;
+  wire sommatore2_n_17;
   wire [17:0]sum;
   wire [17:0]sum_OBUF;
 
@@ -1732,19 +1732,19 @@ end
   Registro__parameterized1 registroOut
        (.AR(clear_IBUF),
         .CLK(clk_IBUF_BUFG),
-        .D({S2,p_0_in_0}),
+        .D({S2,sommatore2_n_17}),
         .Q(sum_OBUF));
   Sommatore sommatore1
        (.AR(clear_IBUF),
         .CLK(clk_IBUF_BUFG),
         .D(A_IBUF),
-        .\Q_reg[14] ({S1,p_0_in}),
+        .\Q_reg[14] ({S1,sommatore1_n_16}),
         .\Q_reg[15] (B_IBUF));
   Sommatore__parameterized1 sommatore2
        (.AR(clear_IBUF),
         .CLK(clk_IBUF_BUFG),
-        .D({S1,p_0_in}),
-        .\Q_reg[15] ({S2,p_0_in_0}),
+        .D({S1,sommatore1_n_16}),
+        .\Q_reg[15] ({S2,sommatore2_n_17}),
         .\Q_reg[16] ({Q[16],Q[14:0]}));
   OBUF \sum_OBUF[0]_inst 
        (.I(sum_OBUF[0]),
@@ -1829,7 +1829,6 @@ module Sommatore
   wire RegB_n_15;
   wire RegB_n_16;
   wire RegB_n_17;
-  wire RegB_n_18;
   wire RegB_n_2;
   wire RegB_n_3;
   wire RegB_n_4;
@@ -1838,16 +1837,17 @@ module Sommatore
   wire RegB_n_7;
   wire RegB_n_8;
   wire RegB_n_9;
+  wire [5:5]c1;
 
   Registro__parameterized3 RegA
        (.AR(AR),
         .CLK(CLK),
         .D(D),
-        .\Q[16]_i_4_0 (RegB_n_18),
         .\Q_reg[0]_0 (RegA_n_20),
         .\Q_reg[14]_0 (\Q_reg[14] [16:2]),
         .\Q_reg[16] ({RegB_n_2,RegB_n_3,RegB_n_4,RegB_n_5,RegB_n_6,RegB_n_7,RegB_n_8,RegB_n_9,RegB_n_10,RegB_n_11,RegB_n_12,RegB_n_13,RegB_n_14,RegB_n_15,RegB_n_16,RegB_n_17}),
-        .\Q_reg[5]_0 ({Q[5:3],Q[1:0]}));
+        .\Q_reg[5]_0 ({Q[5:3],Q[1:0]}),
+        .c1(c1));
   Registro__parameterized3_2 RegB
        (.AR(AR),
         .CLK(CLK),
@@ -1856,7 +1856,7 @@ module Sommatore
         .\Q[16]_i_7_0 ({Q[5:3],Q[1:0]}),
         .\Q_reg[0]_0 (\Q_reg[14] [1:0]),
         .\Q_reg[15]_0 (\Q_reg[15] ),
-        .\Q_reg[4]_0 (RegB_n_18));
+        .c1(c1));
 endmodule
 
 (* ORIG_REF_NAME = "Sommatore" *) 
@@ -1887,7 +1887,6 @@ module Sommatore__parameterized1
   wire RegB_n_15;
   wire RegB_n_16;
   wire RegB_n_17;
-  wire RegB_n_18;
   wire RegB_n_2;
   wire RegB_n_3;
   wire RegB_n_4;
@@ -1896,16 +1895,17 @@ module Sommatore__parameterized1
   wire RegB_n_7;
   wire RegB_n_8;
   wire RegB_n_9;
+  wire [5:5]c1__0;
 
   Registro_0 RegA
        (.AR(AR),
         .CLK(CLK),
         .D(D),
-        .\Q[17]_i_4_0 (RegB_n_18),
         .\Q_reg[0]_0 (RegA_n_21),
         .\Q_reg[15]_0 (\Q_reg[15] [17:2]),
         .\Q_reg[17] ({RegB_n_2,RegB_n_3,RegB_n_4,RegB_n_5,RegB_n_6,RegB_n_7,RegB_n_8,RegB_n_9,RegB_n_10,RegB_n_11,RegB_n_12,RegB_n_13,RegB_n_14,RegB_n_15,RegB_n_16,RegB_n_17}),
-        .\Q_reg[5]_0 ({Q[5:3],Q[1:0]}));
+        .\Q_reg[5]_0 ({Q[5:3],Q[1:0]}),
+        .c1__0(c1__0));
   Registro_1 RegB
        (.AR(AR),
         .CLK(CLK),
@@ -1914,7 +1914,7 @@ module Sommatore__parameterized1
         .\Q[17]_i_7_0 ({Q[5:3],Q[1:0]}),
         .\Q_reg[0]_0 (\Q_reg[15] [1:0]),
         .\Q_reg[16]_0 (\Q_reg[16] ),
-        .\Q_reg[4]_0 (RegB_n_18));
+        .c1__0(c1__0));
 endmodule
 `ifndef GLBL
 `define GLBL
